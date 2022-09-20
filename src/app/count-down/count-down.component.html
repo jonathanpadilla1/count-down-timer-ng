@@ -1,7 +1,8 @@
 <div class="timer">
     <h4> Count down timer </h4>
-    <span id="days"> {{daysToDday}} </span>Days
-    <span id="hours"> {{hoursToDday}} </span>Hrs 
-    <span id="minutes"> {{minutesToDday}} </span>Min
+    <span id="days" [innerHTML]="daysToDday"></span>Days
+    <span id="hours" [innerHTML]="hoursToDday"></span>Hrs 
+    <span id="minutes" [innerHTML]="minutesToDday"></span>Min
     <span id="seconds" [innerHTML]="secondsToDday"></span>S
 </div>
+

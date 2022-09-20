@@ -31,9 +31,9 @@ export class CountDownComponent implements OnInit, OnDestroy {
 
     private allocateTimeUnits (timeDifference: number) {
         this.secondsToDday = this.render(Math.floor((timeDifference) / (this.milliSecondsInASecond) % this.SecondsInAMinute));
-        this.minutesToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour) % this.SecondsInAMinute);
-        this.hoursToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute) % this.hoursInADay);
-        this.daysToDday = Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute * this.hoursInADay));
+        this.minutesToDday = this.render(Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour) % this.SecondsInAMinute));
+        this.hoursToDday = this.render(Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute) % this.hoursInADay));
+        this.daysToDday = this.render(Math.floor((timeDifference) / (this.milliSecondsInASecond * this.minutesInAnHour * this.SecondsInAMinute * this.hoursInADay)));
     }
 
     private render(t: any) {

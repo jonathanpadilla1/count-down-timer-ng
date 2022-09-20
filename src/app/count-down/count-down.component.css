@@ -9,3 +9,9 @@
     font-size: 2em;
     margin: 0 3px 0 15px;
 }
+.caja-contador span {
+    background: #000000;
+    padding: 5px;
+    margin: 0 1px;
+    color: #FFFFFF;
+}
